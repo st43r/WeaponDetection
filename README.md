@@ -42,3 +42,6 @@ $ pip install -r requirements.txt
 <p>
   Видеопоток с камер передается на обученную нейронную сеть, которая выделяет всех людей и оружие на фото. Также каждом человеку присваивается ID
 
+<a href="https://ibb.co/mynycrR"><img src="https://i.ibb.co/hdGdmxg/photo-2023-11-11-20-17-49.jpg" alt="photo-2023-11-11-20-17-49" border="0"></a>
+
+<a href="https://ibb.co/ysX1Xm1"><img src="https://i.ibb.co/s32G2pG/image.png" alt="image" border="0"></a>
