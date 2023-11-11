@@ -1,5 +1,14 @@
-<center><h1>Команда SafeScope</h1></center>
+## <div align="center">Команда SafeScope</div>
 
+
+
+## <div align="center">О нашем решении📝</div>
+<p>Мы представляем модель для детекции людей и оружия по видео. В основе нашей модели был использоан ансамбль из трх моделей yolov8l обученных на размеченном датасете из ~44к фотографий: https://www.linksprite.com/gun-detection-datasets
+
+Метрики:
+<br>
+<a href="https://ibb.co/V3jGsXC"><img src="https://i.ibb.co/vDwWS2d/photo-2023-11-11-19-22-52.jpg" alt="photo-2023-11-11-19-22-52" border="0"></a>
+</p>
 
 ## <div align="center">Стэк технологий📑</div>
 <div align="center">
@@ -10,15 +19,6 @@
   <br>
   <a href="https://github.com/ultralytics/ultralytics/actions/workflows/ci.yaml"><img src="https://github.com/ultralytics/ultralytics/actions/workflows/ci.yaml/badge.svg"></a>
 </div>
-
-## <div align="center">О нашем решении📝</div>
-<p>Мы представляем модель для детекции людей и оружия по видео. В основе нашей модели был использоан ансамбль из трх моделей yolov8l обученных на размеченном датасете из ~44к фотографий: https://www.linksprite.com/gun-detection-datasets
-
-Метрики:
-<br>
-<a href="https://ibb.co/V3jGsXC"><img src="https://i.ibb.co/vDwWS2d/photo-2023-11-11-19-22-52.jpg" alt="photo-2023-11-11-19-22-52" border="0"></a>
-</p>
-
 
 ## <div align="center">Быстрый старт🎢</div>
 <details open>
