@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Scope</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+
+
+<div class="nav-menu">
+    <div class="nav-logo">
+        <img  src="{% static '/logo.png'  %}"   alt="Safe Scope"> Safe Scope
+    </div>
+    <a href="{% url 'home' %}"> Домой</a>
+    <a href="#" class="active">Аналитика</a>
+    <a href="#">Техподдержка</a>
+    <a href="#">Настройки</a>
+</div>
+
+<div class="main_part">
+<div class="main_part_plus"> </div>
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+{% for chart_data in data_for_charts %}
+    <h3>{{ chart_data.title }}</h3>
+    <canvas id="{{ chart_data.title }}" width="10"></canvas>
+    <script>
+        var ctx = document.getElementById('{{ chart_data.title }}').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Дерево', 'Стекло', 'Пластик', 'Металл'],
+                datasets: [{
+                    label: '{{ chart_data.title }}',
+                    data: [{{ chart_data.tree }}, {{ chart_data.glass }}, {{ chart_data.plastic }}, {{ chart_data.metal }}],
+                    backgroundColor: ['#F72221', '#EBAF71', '#EB9971', '#EB7178'],
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
+                    borderWidth: 2
+                }]
+            },
+            options: {
+
+            }
+        });
+    </script>
+{% endfor %}
+{% endblock %}
+
+</div>

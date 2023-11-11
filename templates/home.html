@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Scope</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+<body>
+
+
+
+<div class="nav-menu">
+    <div class="nav-logo">
+        <img  src="{% static '/logo.png'  %}"   alt="Safe Scope"> Safe Scope
+    </div>
+    <a href="#" class="active"> Домой</a>
+    <a href="analytics/">Аналитика</a>
+    <a href="#">Техподдержка</a>
+    <a href="#">Настройки</a>
+</div>
+
+<div class="main_part">
+
+<div class="search-bar">
+    <input type="text" class="search-input" placeholder="Поиск по камере">
+    <button class="search-button">Поиск</button>
+    <a href="{% url 'upload_video' %}" class="upload-button">Загрузить видео</a>
+</div>
+
+
+
+<h2>Последние проанализированные видео</h2>
+<div class="video-container">
+{% for video in latest_videos %}
+    <div class="video-item">
+        <video width="640" height="480" controls>
+            <source src="{{ video.video_file.url }}" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+
+        <p>{{ video.title }}</p>
+
+    </div>
+{% endfor %}
+</div>
+
+<h2>Внимание, оружие:</h2>
+{% for id, count in track_history.items %}
+    {% if count > 50 %}
+        <img src="{% url 'path_to_image_with_id' id %}" alt="Image with ID {{ id }}">
+    {% endif %}
+{% endfor %}
+
+{% for object in detected_objects %}
+    <img src="{{ object.image_path }}" alt="Object ID {{ object.track_id }}">
+{% endfor %}
+
+
+
+<div class="carousel">
+{% for csv_report in csv_reports %}
+    <div><a href="{{ csv_report.csv_file.url }}">{{ csv_report.title }}.txt</a></div>
+{% endfor %}
+</div>
+
+
+
+
+
+</div>
+
+</body>
+</html>

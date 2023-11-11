@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding: 20px;
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 30px;
+}
+
+.carousel div {
+    flex: 0 0 auto;
+    background-color: #fff;
+    padding: 20px;
+
+
+}
+
+.carousel div a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: #433;
+    background-color: #f8eaf1;
+    color: #F72221;
+    padding: 45px 15px;
+    border-radius: 10px !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.video-container {
+      display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Отступ между видео */
+}
+}
+
+.video-item {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    text-align: center;
+
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Навигационное меню */
+.nav-menu {
+    background-color: #333;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+.nav-menu a.active {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+
+}
+
+/* Если нужны отступы у активного элемента */
+.nav-menu a.active {
+
+    margin: 10px 10px;
+    padding: 8px 15px;
+}
+.nav-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px; /* Для скругления углов */
+    outline: none; /* Убираем стандартный outline браузера */
+    flex: 1;
+    font-size: 16px;
+    background-color: #f5f5f5;
+
+}
+
+.search-button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px; /* Для скругления углов */
+    cursor: pointer;
+}
+
+.nav-logo img {
+    width: 52px;
+}
+
+.main_part{
+    margin-left: 250px;
+    padding-left: 25px;
+}
+
+.main_part_plus{
+    margin-left: 270px;
+    width: 15px;
+    background: #d61c11;
+}
+
+.upload-button {
+    background-color: #F72221;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px; /* добавляет небольшой отступ слева от кнопки, чтобы отделить ее от строки поиска */
+    text-decoration: none; /* убирает подчеркивание у ссылки */
+    transition: background-color 0.3s; /* плавное изменение цвета при наведении */
+}
+
+.upload-button:hover {
+    background-color: #d61c11; /* немного темнее оттенок красного при наведении */
+}
+
+/* styles.css */
+
+
+
+
