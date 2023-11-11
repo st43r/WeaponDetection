@@ -15,6 +15,7 @@
 <p>Мы представляем модель для детекции людей и оружия по видео. В основе нашей модели был использоан ансамбль из трх моделей yolov8l обученных на размеченном датасете из ~44к фотографий: https://www.linksprite.com/gun-detection-datasets
 
 Метрики:
+<br>
 <a href="https://ibb.co/V3jGsXC"><img src="https://i.ibb.co/vDwWS2d/photo-2023-11-11-19-22-52.jpg" alt="photo-2023-11-11-19-22-52" border="0"></a>
 </p>
 
